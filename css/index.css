@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFACAC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+  }
+  
+  .logo-container img {
+    height: 75px;
+    width: auto;
+  }
+  
+  .name-container h1 {
+    font-family: 'Myriad Black', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    right: 35px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .menu-icon-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .menu-icon {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+  }
+  
+  .inactive{
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    
+    .menu {
+      display: flex;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #FFACAC;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      z-index: 2;
+    }
+  
+    .menu-icon-container {
+      position: absolute;
+      top: 35px;
+      right: 5px;
+      align-items: center;
+      margin-right: 20px;
+    }
+  
+    .menu-icon {
+      position: absolute;
+      margin-right: 0px;
+      right: 10px;
+      cursor: pointer;
+    }
+  
+    .menu li {
+      margin: 15px 0;
+    }
+  
+    .menu a {
+      font-size: 20px;
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .prueba{
+        width: 100%;
+        height: 1500px;
+    }
+  
+    .inactive {
+      display: none;
+    }
+  
+  }
