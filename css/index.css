@@ -1,13 +1,32 @@
+:root {
+  /* Colors */
+  --Principal-color: #FFACAC;
+  --white: #FFFFFF;
+  --text-input-field: #F7F7F7;
+  --black: #000000;
+  --secondary-color: #FFBFA9;
+  --third: #FFEBB4;
+  --fourth: #FBFFB1;
+  /* Fonts */
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
 *{
     padding: 0;
     margin: 0;
+  }
+
+  .estructura{
+    display: flex;
+    flex-direction: column;
   }
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFACAC;
+    background-color: var(--Principal-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -24,7 +43,7 @@
   .name-container h1 {
     font-family: 'Myriad Black', sans-serif;
     font-size: 24px;
-    color: #fff;
+    color: var(--text-input-field);
     margin: 0;
     right: 35px;
   }
@@ -38,12 +57,31 @@
   
   nav li {
     margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
   }
   
   nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
+  }
+
+  .menu {
+    border-radius: 10px;
+    border: black solid 1px;
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    height: 85px;
+    width: auto;
+    background-color: var(--Principal-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
   
   .menu-icon-container {
