@@ -100,6 +100,76 @@
   .inactive{
     display: none;
   }
+
+  .main-container{
+    margin-top: 80px;
+  }
+
+  footer {
+    background-color: var(--Principal-color);
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .nav-container,
+  .social-container,
+  .map-container {
+    flex: 1 1 300px;
+    margin: 0 20px;
+  }
+  
+  h3 {
+    margin-bottom: 20px;
+    font-size: var(--md);
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--md);
+  }
+  
+  i {
+    font-size: var(--lg);
+    margin: 0 10px;
+  }
+  
+  .map {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+  
   
   @media (max-width: 768px) {
     
